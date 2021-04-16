@@ -7,7 +7,8 @@ console.log("process.env.MONGODB_HOST -", HOST);
 export const uri = `mongodb://${HOST}:27017/personal-management`;
 const options = {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true, 
+    useCreateIndex: true
 };
 export const connectWithDb = ()=>{
     mongoose.connect(uri, options,(err, db)=>{
