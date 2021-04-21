@@ -6,12 +6,13 @@ import {
     Route,
 } from "react-router-dom";
 
+
 export default function Topics() {
     let match = useRouteMatch();
 
     return (
         <div>
-            <h2>Topics</h2>
+            <h2 style={{backgroundColor:"lightblue"}}>Topics</h2>
 
             <ul>
                 <li>

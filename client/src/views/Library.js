@@ -1,5 +1,9 @@
-import React from 'react';
-
-export default function Library() {
-    return <h2>Library</h2>;
-  }
+export default function Library({ locale }) {
+    return (
+        <h1 className="heading">
+            <span className="text">
+                Hello {new Date().toLocaleTimeString(locale)}
+            </span>
+        </h1>
+    );
+}

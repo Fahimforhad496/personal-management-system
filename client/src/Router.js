@@ -32,7 +32,9 @@ import {
           </ul>
   
           <Switch>
-          
+          <Route path="/library">
+              <Library locale="bn-BD"/>
+            </Route>
             <Route path="/about">
               <About />
             </Route>
@@ -42,9 +44,7 @@ import {
             <Route path="/">
               <Home />
             </Route>
-            <Route path="/library">
-              <Library />
-            </Route>
+            
           </Switch>
         </div>
       </Router>
